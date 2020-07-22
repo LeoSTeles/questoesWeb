@@ -50,3 +50,26 @@ textarea{
 	left: 400px;
 }
 
+.Topo{
+	font-size: 30px;
+	font-family: arial;
+	position: absolute;
+	top: 200px;
+	left: 550px;
+}
+
+.gerador{
+	font-size: 20px;
+	font-family: arial;
+	position: absolute;
+	top: 200px;
+	left: 560px;
+}
+
+.prova{
+	font-size: 20px;
+	font-family: arial;
+	position: absolute;
+	top: 200px;
+	left: 560px;
+}

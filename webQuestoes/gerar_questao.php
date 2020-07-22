@@ -6,9 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="estilo_pags.css">
 </head>
 <body>
-	<main>
-	<div class="questoes">
-	<form method="POST" action="salvar_questao.php">
+	<div class="gerador">
+	<form method="POST" action="gerar_do_banco.php">
 	Assunto: 
 	<select name="select_assunto">
 			<option>Selecione</option>
@@ -48,11 +47,8 @@
 				}
 			?>
 		</select><br></br>
-	Gabarito: <input type="text" name="gabarito" placeholder="Gabarito da questão" required><br></br>
-	<p>Questão:</p> <br></br><textarea name="questao"></textarea><br></br>
-	<input type="submit" value ="Cadastrar">
+	<input type="submit" value ="Gerar Questão">
 	</form>
-	</main>
 	</div>
 </body>
 </html>

@@ -56,3 +56,11 @@ label{
 	z-index: 1;
 
 }
+
+.prova{
+	font-size: 20px;
+	font-family: arial;
+	position: absolute;
+	top: 200px;
+	left: 560px;
+}

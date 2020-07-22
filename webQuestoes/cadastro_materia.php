@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilo_pags.css">
+	<script type="text/javascript">
+		function Atualizar(){
+			window.location.reload();
+		}
+	</script>
 </head>
 <body>
 <main>
