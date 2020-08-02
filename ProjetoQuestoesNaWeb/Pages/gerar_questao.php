@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<title>Gerar Questão - Questões na Web</title>
+</head>
+<body>
+	<div class="border">
+		<div class="container centro">
+		<form method="POST" action="gerar_do_banco.php">
+		<h2>Assunto:</h2> 
+		<select name="select_assunto">
+				<option>Nome do Assunto</option>
+				<?php 
+					$result_assuntos = "SELECT * FROM assuntos";
+					$resultado_assuntos = mysqli_query($conn, $result_assuntos);
+					while ($row_assuntos = mysqli_fetch_assoc($resultado_assuntos)){?>
+						<option value="<?php echo $row_assuntos['assunto']; ?>"><?php echo $row_assuntos['assunto'];?>
+							
+						</option><?php
+					}
+				?>
+			</select>
+		<h2>Matéria:</h2> 
+		<select name="select_materia">
+				<option>Nome da Matéria</option>
+				<?php 
+					$result_materias = "SELECT * FROM materias";
+					$resultado_materias = mysqli_query($conn, $result_materias);
+					while ($row_materias = mysqli_fetch_assoc($resultado_materias)){?>
+						<option value="<?php echo $row_materias['materia']; ?>"><?php echo $row_materias['materia'];?>
+							
+						</option><?php
+					}
+				?>
+			</select>
+		<input type="submit" value ="Gerar Questão">
+		</form>
+		</div>
+	</div>
+</body>
+</html>
