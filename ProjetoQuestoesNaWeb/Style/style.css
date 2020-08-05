@@ -10,7 +10,7 @@
 	background: url('../Images/banner.jpg');
 }
 body.bg{
-	background: url('../Images/bgn6.jpeg');
+	background: url('../Images/bgn4.jpg');
 	background-size: 100%;
 }
 
@@ -215,4 +215,73 @@ body.bg{
 	background-color: rgba(16,16,16,.5);
 	border-radius: 20px;
 	border: none;
+}
+
+.box-login{
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.box-login h2{
+	font-size: 20px;
+	padding-top: -20px;
+	color: white;
+	text-align: left;
+}
+
+.box-login input[type=email]{
+	margin: 8px 0;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+}
+
+.box-login input[type=password]{
+	margin: 8px 0;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+}
+
+
+.box-login input[type=submit]{
+	float: right;
+	background: #07889B;
+	max-width: 500px;
+	width: 70px;
+	height: 35px;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+}
+
+.box-login input[type=checkbox]{
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+.box-login p{
+	margin-top: 5px;
+	font-size: 17px;
+	font-family: arial;
+	color: white;
+	margin-left: 5px;
+}
+
+.box-login i{
+	font-size: 70px;
+	margin-bottom: 25px;
+	color: white;
 }

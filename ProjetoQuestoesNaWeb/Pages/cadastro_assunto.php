@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Cadastrar Assunto - Questões na Web</title>
 	
 </head>
 <body>
 	<div class="border">
 		<div class="container center">
-			<form method="POST" action="salvar_assunto.php">
+			<form method="POST" action="Pages/salvar_assunto.php">
 
 			<h2>Matéria:</h2> 
 			<select name="select_materia">
@@ -27,7 +27,7 @@
 			</select>
 
 			<h2>Assunto:</h2> <input type="text" name="assunto" placeholder="Assunto a cadastrar" required>
-			<input type="submit" value ="Salvar Assunto no Banco">
+			<input type="submit" value ="Salvar Assunto">
 			</form>
 		</div>
 	</div>

@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Gerar Questão - Questões na Web</title>
 </head>
 <body>
 	<div class="border">
 		<div class="container centro">
-		<form method="POST" action="gerar_do_banco.php">
+		<form method="POST" action="Pages/questao.php">
 		<h2>Assunto:</h2> 
 		<select name="select_assunto">
 				<option>Nome do Assunto</option>
