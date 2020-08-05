@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Cadastrar Questão - Questões na Web</title>
 	<div class="border_questao">
 		<div class="container_quest center">
-			<form method="POST" action="salvar_questao.php">
+			<form method="POST" action="Pages/salvar_questao.php">
 				<h2>Matéria:</h2> 
 				<select name="select_materia">
 						<option>Nome da Matéria</option>
@@ -49,7 +49,8 @@
 					</select>
 				<h2>Gabarito:</h2> <input type="text" name="gabarito" placeholder="Gabarito da questão" required>
 				<h2>Questão:</h2><textarea class="t_quest" name="questao" placeholder="Digite aqui o conteúdo da questão"></textarea>
-				<input type="submit" value ="Cadastrar">
+				<input type="submit" value ="Salvar Questão">
+			</form>
 			</form>
 		</div>
 	</div>
