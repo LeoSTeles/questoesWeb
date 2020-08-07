@@ -1,3 +1,5 @@
+<?php include('Utils/conexao.php');?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,9 +7,12 @@
 	<link rel="shortcut icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Cadastrar Assunto - Questões na Web</title>
+	<?php
+		include('menu.php')
+	?>
 	
 </head>
-<body>
+<body class="bg">
 	<div class="border">
 		<div class="container center">
 			<form method="POST" action="Pages/salvar_assunto.php">

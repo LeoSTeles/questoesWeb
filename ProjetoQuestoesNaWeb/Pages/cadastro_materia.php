@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<?php
+		include('menu.php')
+	?>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Cadastrar Matéria - Questões na Web</title>
 	
 </head>
-<body>
+<body class="bg">
 	<div class="border">
 		<div class="container center">
 			<form method="POST" action="Pages/salvar_materia.php">

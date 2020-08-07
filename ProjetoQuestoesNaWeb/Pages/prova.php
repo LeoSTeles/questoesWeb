@@ -23,8 +23,38 @@
 	}
 
 	if(mysqli_affected_rows($conn) != 0){
+		<?php
+		$url = isset($_GET['url']) ? $_GET['url'] :  'index';
+		switch ($url) {
+			case 'index':
+				echo '<target target="Início"/>';
+				break;
+
+			case 'cadastro_materia':
+				echo '<target target="Nova Matéria"/>';
+				break;
+
+			case 'cadastro_assunto':
+				echo '<target target="Novo Assunto"/>';
+				break;
+
+			case 'cadastro_questao':
+				echo '<target target="Nova Questão"/>';
+				break;
+
+			case 'gerar_questao':
+				echo '<target target="Gerar Questão"/>';
+				break;
+
+			case 'gerar_prova':
+				echo '<target target="Gerar Prova"/>';
+				break;
+			
+		}
+	?>
+	<?php
 		echo "
-			<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/ProjetoQuestoesNaWeb/Pages/gerar_prova.php'>
+			
 			<script type=\"text/javascript\">
 				alert(\"Prova salva com Sucesso.\");
 			</script>";	
