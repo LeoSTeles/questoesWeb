@@ -1,3 +1,5 @@
+<?php include('Utils/conexao.php');?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +7,11 @@
 	<link rel="shortcut icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<title>Cadastrar Questão - Questões na Web</title>
+	<?php
+		include('menu.php')
+	?>
+</head>
+<body class="bg">
 	<div class="border_questao">
 		<div class="container_quest center">
 			<form method="POST" action="Pages/salvar_questao.php">
@@ -54,8 +61,5 @@
 			</form>
 		</div>
 	</div>
-</head>
-<body>
-
 </body>
 </html>
