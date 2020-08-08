@@ -1,9 +1,10 @@
 <?php
-	include_once('conexao.php');
-	$user = $_POST['email'];
+	session_start();
+	include_once('../Utils/conexao.php');
+	$email = $_POST['email'];
 	$pass = $_POST['password'];
 
-	$logar = "SELECT * FROM sessions WHERE user = $user AND password = $pass";
+	$logar = "SELECT * FROM sessions WHERE email = $email AND password = $pass";
 
 	$log = mysqli_query($conn,$logar);
 
@@ -12,17 +13,10 @@
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = $user;
 		$_SESSION['password'] = $pass;
-		header('Location: '.INCLUDE_PATH);
-		echo "
-		<script type=\"text/javascript\">
-			alert(\"Logado com Sucesso.\");
-		</script>";	
+		header('Location: '.'teste.php');
 	}else{
-		header('Location: '.'Erro ao logar');
-		echo "
-		<script type=\"text/javascript\">
-			alert(\"Não foi possível logar.\");
-		</script>";	
+		header('Location: '.'cadastro_materia.php');
+
 		//Erro ao logar
 	}
 

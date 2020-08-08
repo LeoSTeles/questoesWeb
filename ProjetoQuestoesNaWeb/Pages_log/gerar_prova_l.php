@@ -7,16 +7,16 @@
 	<link rel="shortcut icon" href="../Images/icon.png">
 	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="../js/jquery.js"></script>	
 	<title>Gerar Questão - Questões na Web</title>
 	<?php
-		include('menu.php')
+		include('menu_l.php')
 	?>
 </head>
 <body class="bg">
 	<div class="border">
 		<div class="container_quest centro">
-			<form method="POST" action="questao.php">
+			<form method="POST" action="prova_l.php">
 				<h2>Matéria:</h2>
 				<select name="select_materia" id="id_categoria">
 					<option value="">Selecione a Matéria</option>
@@ -35,7 +35,7 @@
 				</select>
 
 				<h2>Dificuldade:</h2> 
-				<select name="select_dificuldade" id="dific">
+				<select name="select_dificuldade">
 						<option>Dificuldade da Questão</option>
 						<?php 
 							$result_dificuldade = "SELECT * FROM dificuldade";
@@ -54,7 +54,7 @@
 						if( $(this).val() ) {
 							$('#id_sub_categoria').hide();
 							$('.carregando').show();
-							$.getJSON('sub_categorias_post.php?search=',{id_categoria: $(this).val(), ajax: 'true'}, function(j){
+							$.getJSON('sub_categorias_post_l.php?search=',{id_categoria: $(this).val(), ajax: 'true'}, function(j){
 								var options = '<option value="">Selecione o Assunto</option>';	
 								for (var i = 0; i < j.length; i++) {
 									options += '<option value="' + j[i].id + '">' + j[i].nome_assunto + '</option>';
@@ -68,6 +68,7 @@
 					});
 				});
 				</script>
+				<h2>Questões:</h2> <input type="text" name="n_questoes" placeholder="Número de questoes" required>
 				<input type="submit" value ="Gerar Questão">
 			</form>
 		</div>

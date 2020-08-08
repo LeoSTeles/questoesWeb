@@ -36,6 +36,10 @@ body.bg{
 	float: right;
 }
 
+.menu li.logout{
+	float: right;
+}
+
 .menu li.home{
 	text-align: center;
 	float: left;
@@ -123,6 +127,7 @@ body.bg{
 }
 
 .container select {
+	padding-left: 16px;
 	background-color: #4F4F4F;
 	text-align: center;
 	color: white;
@@ -136,6 +141,7 @@ body.bg{
 }
 
 .container_quest{
+	padding-left: 8px;
 	margin: auto;
 	position: absolute;
 	top: 50%;
@@ -151,6 +157,7 @@ body.bg{
 }
 
 .container_quest input[type=text]{
+	text-align: center;
 	background-color: #444;
 	color: white;
 	margin: 8px 0;
@@ -175,6 +182,7 @@ body.bg{
 }
 
 .container_quest textarea.t_quest{
+	padding-left: 16px;
 	color: white;
 	background-color: #444;
 	border-radius: 7px;
@@ -185,6 +193,20 @@ body.bg{
 .container_quest select {
 	background-color: #4F4F4F;
 	color: white;
+	padding-left: 16px;
+	margin: 8px 0;
+	width: 200px;
+	height: 35px;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+}
+
+.container_quest select[name=select_dificuldade] {
+	background-color: #4F4F4F;
+	color: white;
+	padding-left: 8px;
 	margin: 8px 0;
 	width: 200px;
 	height: 35px;
@@ -242,6 +264,7 @@ body.bg{
 }
 
 .box-login input[type=text]{
+	color: white;
 	background-color: #444;
 	width: 300px;
 	height: 35px;
@@ -252,6 +275,7 @@ body.bg{
 }
 
 .box-login input[type=password]{
+	color: white;
 	padding-left: 8px;
 	background-color: #444;
 	margin: 8px 0;
@@ -297,9 +321,120 @@ body.bg{
 	color: white;
 }
 
-#id_sub_categoria{
-	display: inline;
+.box-login h3{
+	color: white;
 }
+
+.box-cadastro{
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.box-cadastro h2{
+	font-size: 20px;
+	padding-top: -20px;
+	color: white;
+	text-align: left;
+}
+
+.box-cadastro input[type=text]{
+	color: white;
+	background-color: #444;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 8px;
+}
+
+.box-cadastro input[type=password]{
+	color: white;
+	padding-left: 8px;
+	background-color: #444;
+	margin: 8px 0;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+}
+
+.box-cadastro input[type=email]{
+	color: white;
+	background-color: #444;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 8px;
+}
+
+.box-cadastro input[type=date]{
+	color: white;
+	background-color: #444;
+	width: 200px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 8px;
+	margin-top: 8px;
+	float: left;
+	color: white;
+	margin-bottom: 8px;
+}
+
+.box-cadastro input[type=password]{
+	padding-left: 8px;
+	background-color: #444;
+	margin: 8px 0;
+	width: 300px;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+}
+.box-cadastro input[type=submit]{
+	float: right;
+	background: #07889B;
+	max-width: 500px;
+	width: 80px;
+	height: 35px;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+}
+
+.box-cadastro input[type=checkbox]{
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+.box-cadastro p{
+	margin-top: 5px;
+	font-size: 17px;
+	font-family: arial;
+	color: white;
+	margin-left: 5px;
+}
+
+.box-cadastro i{
+	font-size: 70px;
+	margin-bottom: 25px;
+	color: white;
+}
+
+
 
 ::-webkit-input-placeholder {
    color: white;
