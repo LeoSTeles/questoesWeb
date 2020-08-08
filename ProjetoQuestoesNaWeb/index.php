@@ -8,8 +8,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="Style/style.css">
 	<title>Questões na Web</title>
-	<section class="banner"></section>
-		<div class="foto"></div>
 	<header>
 		<nav class="menu">
 			<ul>
@@ -51,20 +49,6 @@
 				echo '<target target="Gerar Prova"/>';
 				break;
 			
-		}
-	?>
-	<?php
-		if(file_exists('Pages/'.$url.'.php')){
-			include('Pages/'.$url.'.php');
-		}else{
-			//Pode fazer o que quiser pois a página não existe.//
-			if ($url != 'index' && $url != 'cadastro_materia' && $url != 'cadastro_assunto' && $url != 'cadastro_questao' && $url != 'gerar_questao' && $url != 'gerar_prova') {
-				$pagina404 = true;
-				include('Pages/404.php');
-			}else{
-				include('Pages/home.php');
-			}
-
 		}
 	?>
 

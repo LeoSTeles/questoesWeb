@@ -1,10 +1,13 @@
 <?php
-	include_once('Utils/conexao.php');
+	include('../Utils/conexao.php');
+
 	$materia = $_POST['materia'];
 
-	$salva_materia = "INSERT INTO materias(materia) VALUES ('$materia')";
+	$salva_materia = "INSERT INTO materias(id,nome_materia) VALUES (NULL,'$materia')";
 
 	$svm = mysqli_query($conn,$salva_materia);
+
+	
 
 	if(mysqli_affected_rows($conn) != 0){
 		echo "

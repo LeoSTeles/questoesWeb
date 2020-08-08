@@ -7,8 +7,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="Style/style.css">
 	<title>Questões na Web</title>
-	<section class="banner"></section>
-		<div class="foto"></div>
 	<header>
 		<nav class="menu">
 			<ul>

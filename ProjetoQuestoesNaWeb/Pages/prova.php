@@ -1,9 +1,13 @@
-<?php include_once('Utils/conexao.php');
+<?php include('../Utils/conexao.php');
 
-	$assunto = $_POST['select_assunto'];
 	$materia = $_POST['select_materia'];
+	$assunto = $_POST['select_assunto'];
+	$dificuldade = $_POST['select_dificuldade'];
 	$num = $_POST['n_questoes'];
-	$sql = "SELECT questao, gabarito FROM questoes where assunto = '$assunto' and materia = '$materia' order by rand()";
+
+
+	$sql = "SELECT questao, gabarito FROM questoes where assunto = '$assunto' and materia = '$materia' and dificuldade = '$dificuldade' order by rand()";
+
 	$query = mysqli_query($conn, $sql);
 	$row = mysqli_num_rows($query);
 	$fp = fopen("Prova.txt", "w");
@@ -23,38 +27,8 @@
 	}
 
 	if(mysqli_affected_rows($conn) != 0){
-		<?php
-		$url = isset($_GET['url']) ? $_GET['url'] :  'index';
-		switch ($url) {
-			case 'index':
-				echo '<target target="Início"/>';
-				break;
-
-			case 'cadastro_materia':
-				echo '<target target="Nova Matéria"/>';
-				break;
-
-			case 'cadastro_assunto':
-				echo '<target target="Novo Assunto"/>';
-				break;
-
-			case 'cadastro_questao':
-				echo '<target target="Nova Questão"/>';
-				break;
-
-			case 'gerar_questao':
-				echo '<target target="Gerar Questão"/>';
-				break;
-
-			case 'gerar_prova':
-				echo '<target target="Gerar Prova"/>';
-				break;
-			
-		}
-	?>
-	<?php
 		echo "
-			
+			<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/ProjetoQuestoesNaWeb/Pages/gerar_prova.php'>
 			<script type=\"text/javascript\">
 				alert(\"Prova salva com Sucesso.\");
 			</script>";	
