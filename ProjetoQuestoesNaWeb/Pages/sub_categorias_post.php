@@ -1,4 +1,4 @@
-<?php include_once("conexao.php");
+<?php include('../Utils/conexao.php');
 
 	$id_categoria = $_REQUEST['id_categoria'];
 	
@@ -13,3 +13,4 @@
 	}
 	
 	echo(json_encode($sub_categorias_post));
+?>

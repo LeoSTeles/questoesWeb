@@ -1,9 +1,10 @@
 <?php
-	include_once('Utils/conexao.php');
+	include('../Utils/conexao.php');
 	$assunto = $_POST['assunto'];
 	$materia = $_POST['select_materia'];
 
-	$salva_assunto = "INSERT INTO assuntos(assunto, materia) VALUES ('$assunto', '$materia')";
+	$salva_assunto = "INSERT INTO assuntos(id,nome_assunto,materia_id) VALUES (NULL, '$assunto', '$materia')";
+	
 
 	$sva = mysqli_query($conn,$salva_assunto);
 

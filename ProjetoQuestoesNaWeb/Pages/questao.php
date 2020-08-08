@@ -1,8 +1,10 @@
-<?php include_once('Utils/conexao.php');
+<?php include('../Utils/conexao.php');
 
-	$assunto = $_POST['select_assunto'];
 	$materia = $_POST['select_materia'];
-	$sql = "SELECT questao, gabarito FROM questoes where assunto = '$assunto' and materia = '$materia' order by rand()";
+	$assunto = $_POST['select_assunto'];
+	$dificuldade = $_POST['select_dificuldade'];
+
+	$sql = "SELECT questao, gabarito FROM questoes where assunto = '$assunto' and materia = '$materia' and dificuldade = '$dificuldade' order by rand()";
 	$query = mysqli_query($conn, $sql);
 	$row = mysqli_num_rows($query);
 	$fp = fopen("Questão.txt", "w");
