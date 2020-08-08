@@ -7,16 +7,16 @@
 	<link rel="shortcut icon" href="../Images/icon.png">
 	<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="../js/jquery.js"></script>	
 	<title>Gerar Questão - Questões na Web</title>
 	<?php
-		include('menu.php')
+		include('menu_l.php')
 	?>
 </head>
 <body class="bg">
 	<div class="border">
 		<div class="container_quest centro">
-			<form method="POST" action="questao.php">
+			<form method="POST" action="questao_l.php">
 				<h2>Matéria:</h2>
 				<select name="select_materia" id="id_categoria">
 					<option value="">Selecione a Matéria</option>

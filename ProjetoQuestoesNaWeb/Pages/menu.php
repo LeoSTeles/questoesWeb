@@ -12,6 +12,7 @@
 			<ul>
 				<li class="home"><a class="fas fa-book" href="../index.php"> INÍCIO</a></li>
 				<li class="login"><a href="../Painel/login.php">Login</a></li>
+				<li class="cadastro right"><a href="../Painel/cadastro.php">Cadastrar</a></li>
 				<li><a href="cadastro_materia.php">NOVA MATÉRIA</a></li>
 				<li><a href="cadastro_assunto.php">NOVO ASSUNTO</a></li>
 				<li><a href="cadastro_questao.php">NOVA QUESTÃO</a></li>
